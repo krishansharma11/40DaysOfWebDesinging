@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Form
+    </title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="submit">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+
+        <!-- checkbox -->
+        <label>Select Hobbies</label>
+        <input type="checkbox" name="hobby" value="cricket">Cricket
+        <input type="checkbox" name="hobby" value="running"> Running
+        <label>
+            <input type="checkbox" name="hobby" value="Dancing">
+            Dancing
+        </label>
+        <br>
+        <br>
+        <!-- Radio button -->
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="female"> Female</label>
+        <input type="radio" id="gender" name="gender">
+        <br>
+        <br>
+        <!-- drop down -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+        </select>
+        <br>
+        <br>
+        <!-- Text Area -->
+        <label for="description">Enter About Your City</label>
+        <textarea id="description" name="description" rows="4" cols="8"></textarea>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
