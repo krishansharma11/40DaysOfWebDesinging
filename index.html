@@ -5,19 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Welcome In HTML Course</title>
+    <title>CSS Selectors</title>
 
+    <style>
+        p {
+            color: red;
+        }
+
+        .para {
+            color: aquamarine;
+        }
+
+        #paraId {
+            color: blue;
+        }
+
+        div p {
+            color: rgb(143, 224, 21);
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        p:first-child {
+            font-weight: bold;
+        }
+
+        #pseudoClass::first-letter {
+            color: rgb(34, 94, 32);
+        }
+    </style>
 
 </head>
 
 <body>
-    <h1>Welcome to Internal CSS</h1>
-    <p>This is an example of internal CSS.</p>
 
+    <p>This paragraph will be Red using Element Selector.</p>
+    <p class="para"> Class Selector, use dot(.) prefix for class selector.</p>
+    <p id="paraId">ID Selector, use # prefix for Id selector</p>
     <div>
-
+        <p>Descendant Selector, target elements that are descendants of another element</p>
     </div>
 
+    <p>Pseudo class, target elements based on their state or position. They are prefixed with a colon (:).</p>
+    <a href="#">Hover over this link</a>
+
+    <p id="pseudoClass">Pseudo-elements, target specific parts of an element. They are prefixed with double colons
+        (::).</p>
 </body>
 
 </html>
