@@ -5,98 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>CSS Properties</title>
+    <title>Transforms and Transitions</title>
 
     <style>
-        h3,
-        p {
-            font: italic bold 16px Arial, sans-serif;
-            color: blue;
+        h3 {
             text-align: center;
         }
 
-        div {
-            margin: 40px;
-            padding: 10px;
-            border: 3px solid rgb(209, 34, 34);
+        .mainDiv {
+            margin-top: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(31, 246, 56);
+            margin-left: 85%;
         }
 
-        h4 {
-            background-color: green;
-            padding: 20px;
-        }
-
-        .bdAndBor {
-            height: 100px;
-            width: 100px;
-            background-color: green;
-            border: 3px solid red;
-            margin-left: 45%;
-        }
-
-        #dime {
+        .subDiv {
+            /* margin-left: 50%; */
             width: 100px;
             height: 100px;
-            background-color: aqua;
-            margin-left: 45%;
-        }
-
-        .list {
-            margin-top: 140px;
-        }
-
-        ul {
-            list-style-type: square;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid black;
+            display: flex;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(17, 170, 170);
+            /* transform: scale(2); */
+            /* transform: scale(0.5); */
+            /* transform: scaleX(2) scaleY(1.5); */
+            /* transform: scale(3, 2); */
+            /* transform: scaleZ(2); */
+            /* transform: skew(20deg); */
+            /* transform: skew(10deg, 30deg); */
+            /* transform: translate(50%, 40%); */
+            /* transform: rotate(30deg); */
+            /* transform: rotateZ(40deg); */
+            transform: rotate(0deg) scale(1.4) skew(20deg) translate(30%);
         }
     </style>
 
 </head>
 
 <body>
-    <h3>Text Properties</h3>
-    <p>This is a styled paragraph.</p>
-
-
-    <h3> Box Model</h3>
-    <div>
-
-        <h4> div has margin, padding, and a border.</h4>
-    </div>
-    <h3>Background and Borders </h3>
-    <div class="bdAndBor">
-
-    </div>
-    <h3>Dimensions</h3>
-    <div id="dime">
-
-        <h3 class="list">List</h3>
-        <ul class="unorderedList">
-            <li>Item 1</li>
-            <li>Item 2</li>
-        </ul>
-
-        <h3>Table</h3>
-        <table class="table">
-            <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-            </tr>
-            <tr>
-                <td>Data 1</td>
-                <td>Data 2</td>
-            </tr>
-        </table>
-
+    <h3>Transforms</h3>
+    <div class="mainDiv">
+        <div class="subDiv">Box</div>
     </div>
 </body>
 
