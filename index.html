@@ -4,55 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>CSS Properties</title>
-
     <style>
-        .block {
-            display: block;
-            background-color: antiquewhite;
-            /* width: 200px; */
-        }
-
-        .inline {
-            display: inline;
-            background-color: aquamarine;
-            width: 10px;
-        }
-
-        .inline-block {
+        .static {
+            position: static;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
             display: inline-block;
-            background-color: bisque;
-            width: 100px;
+            /* left: 200px; // not accepted */
         }
 
-        .hidden {
-            display: none;
-            background-color: blue;
+        .relative {
+            position: relative;
+            top: 120px;
+            /* Moves the element 20px down from its original position */
+            left: 200px;
+            /* Moves the element 20px to the right from its original position */
+            background-color: rebeccapurple;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
         }
 
-        .visible {
-            visibility: visible;
+        .absolute {
+            position: absolute;
+            top: 3000px;
+            /* Moves the element 300px down from its containing block */
+            left: 100px;
+            /* Moves the element 40px to the right from its containing block */
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
         }
 
-        .invisible {
-            visibility: hidden;
+        .fixed {
+            position: fixed;
+            top: 250px;
+            /* Moves the element 50px down from the top of the viewport */
+            right: 120;
+            /* Positions the element at the right edge of the viewport */
+            background-color: yellowgreen;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 50px;
+            /* The element becomes fixed after scrolling 110px from the top of its containing block */
+            /* right: 100px; */
+            /* Moves the element 100px to the left from its containing block */
+            background-color: rgb(147, 44, 44);
+            height: 200px;
+            width: 200px;
+            /* display: inline-block; */
+        }
+
+        .mainDiv {
+            background-color: violet;
+            height: 2000px;
+            /* Increased height for scrolling effect */
         }
     </style>
-
 </head>
 
 <body>
-    <div class="block">This is a block element.</div>
-    <span class="inline">This is an inline element.</span>
-    <div class="inline-block">This is an inline-block element.</div>
-    <div class="hidden">This element is hidden.</div>
-    <div class="block">This is a block element.</div>
-
-    <div class="visible">This element is visible.</div>
-    <div class="invisible">This element is invisible but still occupies space.</div>
-    <div class="visible">This element is visible.</div>
-
+    <div class="mainDiv">
+        <div class="static">This is a static element.</div>
+        <div class="relative">This is a relatively positioned element.</div>
+        <div class="absolute">This is an absolutely positioned element.</div>
+        <div class="fixed">This is a fixed element.</div>
+        <div class="sticky">This is a sticky element.</div>
+    </div>
 </body>
 
 </html>
