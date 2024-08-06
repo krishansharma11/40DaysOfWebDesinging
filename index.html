@@ -4,120 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>CSS Properties</title>
-
+    <title>CSS Lists</title>
     <style>
-        h3,
-        p {
-            font: italic bold 16px Arial, sans-serif;
-            color: blue;
-            text-align: center;
-        }
-
-        div {
-            margin: 40px;
-            padding: 10px;
-            border: 3px solid rgb(209, 34, 34);
-        }
-
-        h4 {
-            background-color: green;
-            padding: 20px;
-        }
-
-        .bdAndBor {
-            height: 100px;
-            width: 100px;
-            background-color: green;
-            border: 3px solid red;
-            margin-left: 45%;
-        }
-
-        #bgImage {
-            background-image: url('bg.jpg');
-            /* background-color: rebeccapurple; */
-            /* height: 100px; */
-            /* width: 100%; */
-            background-size: contain;
-            /* background-repeat: repeat; */
-            /* margin-left: 35%; */
-            background-attachment: fixed;
-        }
-
-        .borderDiv {
-            border-top: 5px solid rgb(88, 88, 151);
-            border-right: 1px dotted red;
-            border-bottom: 3px dashed green;
-            border-left: 4px double rgb(31, 35, 146);
-        }
-
-        #dime {
-            width: 100px;
-            height: 100px;
-            background-color: aqua;
-            margin-left: 45%;
-        }
-
-        .list {
-            margin-top: 140px;
-
-        }
-
         ul {
-            list-style-type: square;
+            list-style-type: decimal;
+        }
+
+        ol {
+            list-style-type: disc;
+        }
+
+        .inside {
+            list-style-position: inside;
+        }
+
+        .outside {
+            list-style-position: outside;
+        }
+
+        .image-list {
+            list-style-image: url('bullet.png');
         }
 
         table {
+            width: 100%;
             border-collapse: collapse;
         }
 
-        table,
         th,
         td {
             border: 1px solid black;
+            padding: 30px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #edcccc;
+        }
+
+        tr:nth-child(even) {
+            background-color: #c4acac;
+        }
+
+        tr:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        tr:hover {
+            background-color: #c2c6d8;
+        }
+
+        caption {
+            caption-side: bottom;
+            font-weight: bold;
+            padding: 14px;
         }
     </style>
-
 </head>
 
 <body>
-    <h3>Text Properties</h3>
-    <p>This is a styled paragraph.</p>
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 
+    <h2>Ordered List</h2>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
 
-    <h3> Box Model</h3>
-    <div>
+    <h2>Position Inside</h2>
+    <ul class="inside">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 
-        <h4> div has margin, padding, and a border.</h4>
-    </div>
-    <h3>Background and Borders </h3>
-    <div class="bdAndBor">
-    </div>
-    <div id="bgImage"></div>
-    <div class="borderDiv"></div>
-    <h3>Dimensions</h3>
-    <div id="dime">
+    <h2>Position Outside</h2>
+    <ul class="outside">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 
-        <h3 class="list">List</h3>
-        <ul class="unorderedList">
-            <li>Item 1</li>
-            <li>Item 2</li>
-        </ul>
+    <h2>Image List</h2>
+    <ul class="image-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 
-        <h3>Table</h3>
-        <table class="table">
-            <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-            </tr>
-            <tr>
-                <td>Data 1</td>
-                <td>Data 2</td>
-            </tr>
-        </table>
-
-    </div>
+    <h2>Styled Table</h2>
+    <table>
+        <caption>Sample Table</caption>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+    </table>
 </body>
 
 </html>
