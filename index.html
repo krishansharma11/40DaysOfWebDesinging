@@ -29,8 +29,8 @@
             justify-content: center;
             align-items: center;
             background-color: rgb(17, 170, 170);
-            /* transform: scale(2, 1); */
-            transform: scale3d(1, 1, 6);
+            transform: scale(2, 1);
+            /* transform: scale3d(1, 1, 6); */
             /* transform: scale(2.5); */
             /* transform: scaleX(2) scaleY(1.5); */
             /* transform: scale(3, 2); */
@@ -42,6 +42,32 @@
             /* transform: rotateZ(40deg); */
             /* transform: rotate(0deg) scale(1.4) skew(20deg) translate(30%); */
         }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-left: 120px;
+            /* transition: ease-out 1s; */
+            /* transition: linear 2s; */
+            transition: background-color 4s ease-in-out, transform 1s;
+            /* transition-property: background-color; */
+            /* transition: ease-in 2s; */
+            /*slow then fast */
+            /* transition: ; */
+            /* transition-property: background-color; */
+            /* transition-duration: 4s; */
+            /* transition-timing-function: ease-in;/ */
+            /* transition-delay: 1s; */
+            /* transition: background-color 2s ease-in-out; */
+        }
+
+        .box:hover {
+            background-color: coral;
+            /* font-size: 10px; */
+            /* transform: translateY(300px); */
+            transform: scaleX(2);
+        }
     </style>
 
 </head>
@@ -51,6 +77,11 @@
     <div class="mainDiv">
         <div class="subDiv">Box</div>
     </div>
+
+    <br>
+    <h3>Transitions</h3>
+    <div class="box">Hello World</div>
+
 </body>
 
 </html>
