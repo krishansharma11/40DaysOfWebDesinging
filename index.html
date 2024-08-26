@@ -8,73 +8,67 @@
     <title>Flexbox Excerise</title>
 
     <style>
-        .gridContainer {
-            display: grid;
-            background-color: aqua;
-            /* grid-template-columns: auto auto auto auto; */
-            /* grid-template-rows: 100px 200px 100px 300px; */
-            /* grid-auto-rows: 200px; */
-            padding: 10px;
-            gap: 10px;
-            /* justify-content: end; */
-            /* width: 1300px; */
-            /* align-content: flex-end; */
-            /* row-gap: 20px; */
-            /* height: 500px; */
-            /* align-items: flex-end; */
-            /* grid-row-start: 1; */
-            /* grid-row-end: 4; */
-            grid-template-areas:
-                "hdr hdr hdr hdr"
-                "sbr main main main"
-                "sbr main main main"
-                "ftr ftr ftr ftr ftr";
+        * {
+            text-align: center;
         }
 
-        .gridItem {
+        .mainDiv {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             height: 200px;
-            /* width: 200px; */
-            background-color: antiquewhite;
+            width: 400px; */
+            /* background-color: aqua; */
+            font-size: 20px;
         }
 
-        #gridItem2 {
-            /* grid-row-start: 2;
-            grid-row-end: 4; */
-            grid-row: 1 / 4;
-            /* grid-area: hdr; */
-            /* grid-column-start: 1; */
-            /* grid-column-end: 4; */
-            /* grid-column: 1/5; */
+        /* 
+        .subDiv {
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospac;
         }
 
-        #gridItem2 {
-            /* grid-area: sbr; */
+        p {
+            font-size: 1.5rem;
+        } */
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
         }
 
-        #gridItem3 {
-            grid-area: main;
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 3.5rem;
+            font-style: italic;
         }
 
-        #gridItem4 {
-            /* grid-area: ftr; */
+        p {
+            font-family: 'Verdana', sans-serif;
+            font-size: 2rem;
+        }
+
+        em {
+            font-style: oblique;
         }
     </style>
 
 </head>
 
 <body>
-    <h2>Grid Layout</h2>
-    <div class="gridContainer">
-        <div class="gridItem" id="gridItem1"></div>
-        <div class="gridItem" id="gridItem2"></div>
-        <div class="gridItem" id="gridItem3"></div>
-        <div class="gridItem" id="gridItem4"></div>
-        <div class="gridItem" id="gridItem5"></div>
-        <div class="gridItem" id="gridItem6"></div>
-        <div class="gridItem" id="gridItem7"></div>
-        <div class="gridItem" id="gridItem8"></div>
-        <div class="gridItem" id="gridItem9"></div>
+    <h2>Font Properties</h2>
+    <div class="mainDiv">
+        Main Div
+        <div class="subDiv">Sub Div
+            <p>This is a paragraph</p>
+        </div>
     </div>
+
+    <h1>Welcome to the Font Properties Example</h1>
+    <p>This paragraph is styled with the <em>Verdana</em> font, which is a sans-serif typeface.</p>
+    <p>The heading above uses a <em>Georgia</em> font with italic style and larger size.</p>
+
 </body>
 
 </html>
