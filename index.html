@@ -5,66 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Flexbox</title>
+    <title>Flexbox Excerise</title>
 
     <style>
-        .container {
-            display: flex;
-            /* flex-wrap: wrap; */
-            /* Allows items to wrap to multiple lines */
-            height: 500px;
-            /* Adjust based on content */
-            background-color: lightgray;
-            align-content: flex-start;
-            /* justify-content: center; */
-            /* align-items: baseline; */
-            /* gap: 50px; */
-            align-self: flex-end;
-            /* flex-flow: column wrap; */
-            /* flex-direction: column; */
-            /* worked when having multiple lines */
+        .gridContainer {
+            display: grid;
+            background-color: aqua;
+            /* grid-template-columns: auto auto auto auto; */
+            /* grid-template-rows: 100px 200px 100px 300px; */
+            /* grid-auto-rows: 200px; */
+            padding: 10px;
+            gap: 10px;
+            /* justify-content: end; */
+            /* width: 1300px; */
             /* align-content: flex-end; */
+            /* row-gap: 20px; */
+            /* height: 500px; */
+            /* align-items: flex-end; */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 4; */
+            grid-template-areas:
+                "hdr hdr hdr hdr"
+                "sbr main main main"
+                "sbr main main main"
+                "ftr ftr ftr ftr ftr";
         }
 
-        .item {
-            background-color: tomato;
-            color: white;
-            /* flex-wrap: wrap; */
-            /* padding: 20px; */
-            margin: 10px;
-            width: 100px;
-            height: 100px;
-
+        .gridItem {
+            height: 200px;
+            /* width: 200px; */
+            background-color: antiquewhite;
         }
 
-        #item1 {
-            flex-grow: 1;
-            /* flex-shrink: 3; */
-            /* flex-basis: 200px; */
-            /* order: 1; */
-
+        #gridItem2 {
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            grid-row: 1 / 4;
+            /* grid-area: hdr; */
+            /* grid-column-start: 1; */
+            /* grid-column-end: 4; */
+            /* grid-column: 1/5; */
         }
 
-        #item2 {
-            flex-grow: 2;
-            order: 2;
+        #gridItem2 {
+            /* grid-area: sbr; */
+        }
+
+        #gridItem3 {
+            grid-area: main;
+        }
+
+        #gridItem4 {
+            /* grid-area: ftr; */
         }
     </style>
 
 </head>
 
 <body>
-    <h2>Flexbox</h2>
-
-
-    <div class="container">
-        <div class="item" id="item1">1</div>
-        <div class="item" id="item2">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
+    <h2>Grid Layout</h2>
+    <div class="gridContainer">
+        <div class="gridItem" id="gridItem1"></div>
+        <div class="gridItem" id="gridItem2"></div>
+        <div class="gridItem" id="gridItem3"></div>
+        <div class="gridItem" id="gridItem4"></div>
+        <div class="gridItem" id="gridItem5"></div>
+        <div class="gridItem" id="gridItem6"></div>
+        <div class="gridItem" id="gridItem7"></div>
+        <div class="gridItem" id="gridItem8"></div>
+        <div class="gridItem" id="gridItem9"></div>
     </div>
-
 </body>
 
 </html>
