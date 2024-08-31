@@ -5,89 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Flexbox Excerise</title>
+    <title>Flexbox Exercise</title>
 
     <style>
-        * {
-            text-align: center;
-        }
-
         .mainDiv {
-            /* display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 200px;
-            width: 400px; */
-            /* background-color: aqua; */
-            font-size: 20px;
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            background-color: rgb(61, 5, 5);
+            color: aqua;
         }
 
-        /* 
-        .subDiv {
-            font-size: 1.5em;
-            font-family: 'Courier New', Courier, monospac;
+        /* Breakpoints adjusted for better visibility */
+        @media(max-width: 450px) {
+            .mainDiv {
+                background-color: rgb(20, 104, 104);
+            }
         }
 
-        p {
-            font-size: 1.5rem;
-        } */
-
-        @font-face {
-            font-family: myFont;
-            src: url(DOODLE.ttf);
+        @media(max-width: 350px) {
+            .mainDiv {
+                background-color: rgb(193, 162, 27);
+            }
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-        }
-
-        h1 {
-
-            /* font-family: 'Georgia', serif; */
-            font-family: myFont;
-            font-size: 3.5rem;
-            font-style: italic;
-            /* using hex color*/
-            color: #232dfd;
-        }
-
-        p {
-            font-family: 'Verdana', sans-serif;
-            font-size: 2rem;
-            line-height: 2px;
-            word-spacing: 3px;
-            letter-spacing: 3px;
-            /* using rgb color */
-            /* text-decoration: line-through; */
-            /* text-decoration: underline; */
-            /* text-align: left; */
-            /* text-align: right; */
-            text-align: center;
-            color: rgba(233, 122, 444, 0.5);
-        }
-
-        em {
-            font-style: oblique;
+        @media(max-width: 250px) {
+            .mainDiv {
+                background-color: rgb(24, 100, 100);
+            }
         }
     </style>
 
 </head>
 
 <body>
-    <h2>Font Properties</h2>
-    <div class="mainDiv">
-        Main Div
-        <div class="subDiv">Sub Div
-            <p>This is a paragraph</p>
-        </div>
-    </div>
-
-    <h1>Welcome to the Font Properties Example</h1>
-    <p>This paragraph is styled with the <em>Verdana</em> font, which is a sans-serif typeface.</p>
-    <p>The heading above uses a <em>Georgia</em> font with italic style and larger size.</p>
-
+    <h2>Media Query</h2>
+    <div class="mainDiv">Main Div</div>
 </body>
 
 </html>
