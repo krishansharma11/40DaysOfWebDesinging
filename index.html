@@ -5,12 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css"> <!-- Link to compiled CSS -->
-    <title>CSS Preprocessor</title>
+    <title>Z Index</title>
+
+    <style>
+        .firstDiv {
+            position: absolute;
+            width: 400px;
+            height: 100px;
+            background-color: antiquewhite;
+            margin-left: 20px;
+            margin-top: 20px;
+            z-index: 2;
+        }
+
+        .secondDiv {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(185, 33, 33);
+            margin-left: 50px;
+            margin-top: 50px;
+            z-index: 4;
+        }
+
+        .thirdDiv {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(20, 42, 168);
+            margin-left: 200px;
+            margin-top: 100px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 100px;
+            z-index: 3;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Preprocessor</h2>
-    <div class="mainDiv">Main Div</div>
+    <h2>Z Index</h2>
+    <div class="firstDiv">First Div</div>
+    <div class="secondDiv">Second Div</div>
+    <div class="thirdDiv">Third Div</div>
 </body>
 
 </html>
