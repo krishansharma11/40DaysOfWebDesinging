@@ -1,9 +1,10 @@
 .mainDiv {
   background-color: #FFaaaa;
-  color: white;
+  color: #d91d1d;
   padding: 20px;
   text-align: center;
-  border-radius: 5px;
+  border: black solid 3px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */
