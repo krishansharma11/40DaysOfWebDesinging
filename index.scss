@@ -1,0 +1,12 @@
+// <!-- scss comopile comman -->
+// <!-- sass index.scss index.css -->
+
+$primary-color: #FFaaaa;
+
+.mainDiv {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
