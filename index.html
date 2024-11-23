@@ -4,50 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+    <title>
+        External JavaScript
+    </title>
+    <script src="script.js"></script>
 
-    <!-- JavaScript Code Inside <head> Tag -->
-    <script>
-        function myHello() {
-            document.getElementById("demo")
-                .innerHTML = "Item changed!";
-        }
-    </script>
 
 </head>
 
 <body>
-    <button onclick="alert('Hello World')">Click On</button>
     <h2>
-        Adding JavaScript Code
-        inside Head Section
+        External JavaScript
     </h2>
-    <h3 id="demo" style="color:rgb(201, 57, 95);">
-        Old Item
+    <h3>For larger projects or when reusing scripts across multiple HTML files, you can place your JavaScript code in an
+        external .js file. This file is then linked to your HTML document using the src attribute within a script tag.
+    </h3>
+
+    <h3 id="demo" style="color:rgb(128, 0, 83);">
+        Hello External JavaScrip
     </h3>
 
     <button type="button" onclick="myHello()">
-        Change Item
+        Click Here
     </button>
-    <br>
-    <br>
-    <h2> Add JavaScript Code inside Body Section</h2>
-    <!-- // Use Script tag in HTML File to use JavaScript -->
-    <script>
-        // Go to broser and right click select inspect and then select console tab 
-        // you will see Hello World!
-        console.log("Hello World!")
-        function ShowItemName() {
-            document.getElementById("showItem")
-                .innerHTML = "This is new Item";
-        }
-    </script>
-    <h3 id="showItem" style="color:rgb(201, 57, 95);">
-        Old Item
-    </h3>
-    <button onclick="ShowItemName()">
-        Show Item
-    </button>
+
 </body>
 
 </html>
