@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript if-else</title>
+    <title>JavaScript Loop</title>
 
 
 
@@ -12,47 +12,47 @@
 
 <body>
     <script>
-        let day = 2;
-        let dayName;
-
-        switch (day) {
-            case 1:
-                dayName = "Monday";
-                break;
-            case 2:
-                dayName = "Tuesday";
-                break;
-            case 3:
-                dayName = "Wednesday";
-                break;
-            case 4:
-                dayName = "Thursday";
-                break;
-            case 5:
-                dayName = "Friday";
-                break;
-            case 6:
-                dayName = "Saturday";
-                break;
-            case 7:
-                dayName = "Sunday";
-                break;
-            default:
-                dayName = "Invalid day";
+        console.log('JavaScript for Loop');
+        for (let i = 0; i < 5; i++) {
+            console.log("Hello World!");
         }
 
-        console.log(dayName);
+        // JavaScript program to illustrate for loop
+        let x;
 
-        for (let i = 0; i < 10; i++) {
-            if (i % 2 == 0) continue;
-            console.log(i);
+        // for loop begins when x = 2
+        // and runs till x <= 4
+        for (x = 2; x <= 4; x++) {
+            console.log("Value of x: " + x);
         }
 
-        function add(a, b) {
-            return a + b;
-        };
+        console.log('JavaScript while Loop')
+        let val = 1;
 
-        console.log(add(6, 10));
+        while (val < 6) {
+            console.log(val);
+            val += 1;
+        }
+
+        console.log('JavaScript do-while Loop')
+        let test = 1;
+
+        do {
+            console.log(test);
+            test++;
+        } while (test <= 5)
+
+        console.log(' JavaScript for-in Loop');
+        let myObj = { x: 1, y: 2, z: 3 };
+        for (let key in myObj) {
+            console.log(key, myObj[key]);
+        }
+
+        console.log('JavaScript for-of Loop')
+        let arr = [1, 2, 3, 4, 5];
+        for (let value of arr) {
+            console.log(value);
+        }
     </script>
 </body>
 
