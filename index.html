@@ -36,6 +36,23 @@
             console.log("j is less than 15");
         else
             console.log("I am Not in if");
+
+
+        // JavaScript program to illustrate nested-if statement
+        let k = 10;
+
+        if (k == 10) {  // First if statement
+            if (k < 15) {
+                console.log("k is smaller than 15");
+                // Nested - if statement
+                // Will only be executed if statement above
+                // it is true
+                if (k < 12)
+                    console.log("k is smaller than 12 too");
+                else
+                    console.log("k is greater than 15");
+            }
+        }
     </script>
 </body>
 
