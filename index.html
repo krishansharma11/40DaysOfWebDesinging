@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Variables and DataType</title>
+    <title>JavaScript if-else</title>
 
 
 
@@ -12,41 +12,30 @@
 
 <body>
     <script>
-        // The var keyword is used to declare a variable. It has a function-scoped or globally-scoped behavior.
-        var a = "Hello World"
-        var b = 100;
-        var c = 200;
-        var d = b + c;
+        // JavaScript program to illustrate If statement
+        let i = 100;
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
+        if (i > 200) console.log("10 is less than 15");
 
+        // This statement will be executed
+        // as if considers one statement by default
+        console.log("I am Not in if");
 
-        // The let keyword is a block-scoped variables. It’s commonly used for variables that may change their value.
-        let aa = "Hello Coders"
-        let bb = "Can you join to us?";
-        let cc = " 100";
-        let dd = bb + cc;
+        // JavaScript program to illustrate If statement
+        let age = 19;
 
-        console.log(aa);
-        console.log(bb);
-        console.log(cc);
-        console.log(dd);
+        if (age > 18)
+            console.log("Congratulations, You are eligible to drive");
+    </script>
 
-        // The const keyword declares variables that cannot be reassigned. It’s block-scoped as well.
-        const txt = "Hello Coders"
-        console.log(txt);
+    <script>
+        // JavaScript program to illustrate If-else statement
+        let j = 10;
 
-        const b1 = 500;
-        console.log(b1);
-
-        const c1 = "100";
-        console.log(c1);
-        // Can not change a value for a constant
-        // c = "new"
-        // console.log(c) will show error
+        if (j < 15)
+            console.log("j is less than 15");
+        else
+            console.log("I am Not in if");
     </script>
 </body>
 
