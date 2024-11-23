@@ -4,50 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Basic</title>
+    <title>JavaScript Syntax</title>
 
-    <!-- JavaScript Code Inside <head> Tag -->
-    <script>
-        function myHello() {
-            document.getElementById("demo")
-                .innerHTML = "Item changed!";
-        }
-    </script>
+
 
 </head>
+<script>
+    // Variable declaration
+    let c, d, e;
+
+    // Assign value to the variable
+    c = 5;
+
+    // Computer value of variables
+    d = c;
+    e = c / d;
+
+    let num1 = 100
+    let num2 = 200.05
+
+    let str1 = "Hello"
+    let str2 = 'World'
+
+    console.log(num1)
+    console.log(num2)
+    console.log(str1)
+    console.log(str2)
+
+    let Name = "Apple";
+    // Function call
+    MyFunction();
+    // Function definition
+    function MyFunction() {
+
+        // Local variable declaration
+        let num = 50;
+
+        // Display the value of Global variable
+        console.log(Name);
+
+        // Display the value of local variable
+        console.log(num);
+    }
+</script>
+
+<script>
+    console.log('JavaScript Keywords')
+    console.log('let is the keyword used to define the variable')
+    console.log('JavaScript Operators')
+    // Variable Declarations
+    let x, y, sum;
+
+    // Assign value to the variables
+    x = 3;
+    y = 23;
+
+    // Use arithmetic operator to
+    // add two numbers
+    sum = x + y;
+
+    console.log(sum);
+
+
+    console.log('JavaScript Expressions')
+
+    // Assign value to the variables
+    x = 20;
+    y = 30
+
+    // Expression to divide a number
+    num = x / 2;
+
+    // Expression to add two numbers
+    sum = x + y;
+
+    console.log(num + "\n" + sum);
+</script>
 
 <body>
-    <button onclick="alert('Hello World')">Click On</button>
-    <h2>
-        Adding JavaScript Code
-        inside Head Section
-    </h2>
-    <h3 id="demo" style="color:rgb(201, 57, 95);">
-        Old Item
-    </h3>
-
-    <button type="button" onclick="myHello()">
-        Change Item
-    </button>
-    <br>
-    <br>
-    <h2> Add JavaScript Code inside Body Section</h2>
-    <!-- // Use Script tag in HTML File to use JavaScript -->
-    <script>
-        // Go to broser and right click select inspect and then select console tab 
-        // you will see Hello World!
-        console.log("Hello World!")
-        function ShowItemName() {
-            document.getElementById("showItem")
-                .innerHTML = "This is new Item";
-        }
-    </script>
-    <h3 id="showItem" style="color:rgb(201, 57, 95);">
-        Old Item
-    </h3>
-    <button onclick="ShowItemName()">
-        Show Item
-    </button>
 </body>
 
 </html>
