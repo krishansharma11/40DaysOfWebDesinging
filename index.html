@@ -5,197 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+
+    <!-- JavaScript Code Inside <head> Tag -->
+    <script>
+        function myHello() {
+            document.getElementById("demo")
+                .innerHTML = "Item changed!";
         }
+    </script>
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
-        }
-
-        .slider {
-            width: 500px;
-            height: 300px;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
-
-        .slides {
-            width: 500%;
-            height: 100%;
-            display: flex;
-        }
-
-        .slide {
-            width: 20%;
-            transition: 0.6s ease-in-out;
-        }
-
-        .slide img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .navigation-manual {
-            position: absolute;
-            width: 100%;
-            margin-top: -40px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .manual-btn {
-            border: 2px solid #40d3dc;
-            padding: 5px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            margin: 0 5px;
-        }
-
-        .manual-btn:hover,
-        #radio1:checked~.navigation-manual label[for="radio1"],
-        #radio2:checked~.navigation-manual label[for="radio2"],
-        #radio3:checked~.navigation-manual label[for="radio3"],
-        #radio4:checked~.navigation-manual label[for="radio4"] {
-            background: #40d3dc;
-        }
-
-        #radio1:checked~.slides {
-            transform: translateX(0);
-        }
-
-        #radio2:checked~.slides {
-            transform: translateX(-100%);
-        }
-
-        #radio3:checked~.slides {
-            transform: translateX(-200%);
-        }
-
-        #radio4:checked~.slides {
-            transform: translateX(-300%);
-        }
-
-        .navigation-auto {
-            position: absolute;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-top: -70px;
-        }
-
-        .navigation-auto div {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            border: 2px solid #40d3dc;
-            margin: 0 5px;
-            background-color: #ccc;
-            transition: background 0.3s ease;
-        }
-
-        .navigation-auto .auto-btn1 {
-            animation: auto 16s infinite;
-        }
-
-        .navigation-auto .auto-btn2 {
-            animation: auto 16s infinite;
-        }
-
-        .navigation-auto .auto-btn3 {
-            animation: auto 16s infinite;
-        }
-
-        .navigation-auto .auto-btn4 {
-            animation: auto 16s infinite;
-        }
-
-        @keyframes auto {
-            0% {
-                background: #40d3dc;
-            }
-
-            25% {
-                background: transparent;
-            }
-
-            50% {
-                background: transparent;
-            }
-
-            75% {
-                background: transparent;
-            }
-
-            100% {
-                background: transparent;
-            }
-        }
-    </style>
 </head>
 
 <body>
+    <button onclick="alert('Hello World')">Click On</button>
+    <h2>
+        Adding JavaScript Code
+        inside Head Section
+    </h2>
+    <h3 id="demo" style="color:rgb(201, 57, 95);">
+        Old Item
+    </h3>
 
-    <div class="slider">
-        <div class="slides">
-            <!-- Radio Buttons for Navigation -->
-            <input type="radio" name="radio-btn" id="radio1" checked>
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-
-            <!-- Slide Images -->
-            <div class="slide first">
-                <img src="image1.png" alt="Image 1">
-            </div>
-            <div class="slide">
-                <img src="image2.png" alt="Image 2">
-            </div>
-            <div class="slide">
-                <img src="image3.jpeg" alt="Image 3">
-            </div>
-            <div class="slide">
-                <img src="image4.jpeg" alt="Image 4">
-            </div>
-
-            <!-- Automatic Navigation -->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-        </div>
-
-        <!-- Manual Navigation -->
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-    </div>
-
+    <button type="button" onclick="myHello()">
+        Change Item
+    </button>
+    <br>
+    <br>
+    <h2> Add JavaScript Code inside Body Section</h2>
+    <!-- // Use Script tag in HTML File to use JavaScript -->
     <script>
-        let counter = 1;
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 5000);
+        // Go to broser and right click select inspect and then select console tab 
+        // you will see Hello World!
+        console.log("Hello World!")
+        function ShowItemName() {
+            document.getElementById("showItem")
+                .innerHTML = "This is new Item";
+        }
     </script>
+    <h3 id="showItem" style="color:rgb(201, 57, 95);">
+        Old Item
+    </h3>
+    <button onclick="ShowItemName()">
+        Show Item
+    </button>
 </body>
 
 </html>
